@@ -30,7 +30,7 @@ function parosDarab(szamok: number []): number {
 function fuggvenyhivasPalindrom(fv:() => string): boolean {
     var szoveg: string = fv();
     var palindromE: boolean = true;
-
+    
     for (var i: number = 0; i <= szoveg.length / 2; i++) {
         //console.log(szoveg[i] , szoveg[szoveg.length - i - 1]);
         if (szoveg[i] !== szoveg[szoveg.length - i - 1]) {
