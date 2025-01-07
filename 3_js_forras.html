@@ -7,15 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Unit teszt feladat</title>
 	<script type="text/javascript">
-	<!-- Ide jön  a feladat megoldása... -->
+	//<!-- Ide jön  a feladat megoldása... -->
 	
+	function kivalogatParosOtven(szamok) {
+		var tombParosOtven= [];
+
+		if((szamok!== undefined)) {
+			for(var szam of szamok) {
+				if(szam % 2 == 0 && szam > 50) {
+					tombParosOtven.push(szam);
+				}
+			}	
+		}
+
+		return tombParosOtven;
+	}
+	//console.log(kivalogatParosOtven());
 	
-	<!-- Idáig -->
+	function aBetukSzamaDiv() {
+		var aDb = 0;
+		var divTartalom = document.getElementsByTagName("div")[0].innerHTML;
+		
+		for(var betu of divTartalom) {
+			if (betu == "a") {
+				aDb++;
+			}
+		}
+
+		return aDb;
+	}
+	//console.log(aBetukSzamaDiv());
+
+	function osszeadasFeliras(osztaly, szam1, szam2) {
+		var elem = document.getElementsByClassName(osztaly)[0];
+		var parag = document.createElement("p");
+
+		parag.appendChild(document.createTextNode(szam1 + "+" + szam2 + "=" +(Number(szam1) + Number(szam2))));
+
+		elem.appendChild(parag);
+	}
+
+
+	//<!-- Idáig -->
 	</script>
 	<script src="testBaseUnit.js"></script>
 </head>
 <body>
-    <div></div>
+    <div>agi21bvg8ibvgavgvt3zv8gfzavgzuv9gzuavgzu55vgz</div>
 	<hr>
 	<div id="testResult">
 	<h2>Tesztek</h2></div>
