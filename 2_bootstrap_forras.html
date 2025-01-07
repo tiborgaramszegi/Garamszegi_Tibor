@@ -12,11 +12,31 @@
 </head>
 <body>
     <!-- Ide jön  a feladat megoldása... -->
-	
-	
-	
-	
-	
+
+    <section class="container">
+        <section class="row">
+            <section class="col-lg-3"></section>
+            <section class="col-lg-6">
+                <form action="feldolgoz.php" method="POST">
+                    <section class="form-group">
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" class="form-control" name="email" id="email">    
+                    </section>
+                    <section class="form-group">
+                        <label for="name">Név:</label><br>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </section>
+                    <section class="form-group">
+                        <label for="text_message">Rendelés szövege:</label><br>
+                        <textarea class="form-control" name="text_message" id="text_message"></textarea>    
+                    </section>
+                    <button type="button" class="btn btn-primary" name="ok" value="ok">Submit</button>
+                </form>
+            </section>
+            <section class="col-lg-3"></section>
+        </section>
+    </section>
+
 	<!-- Idáig -->
 	<hr>
 <div id="testResult">
